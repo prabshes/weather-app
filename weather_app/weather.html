@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=477, initial-scale=1.0" />
+    <title>weather_app</title>
+    <link rel="stylesheet" href="weather.css" />
+    <script defer src="weather.js"></script>
+  </head>
+  <body>
+    <!-- This is version__1 -->
+    <!-- <div class="container">
+      <div class="main"></div>
+
+      <div class="detail">
+        <div class="txt">
+          <h3>DETAIL</h3>
+        </div>
+
+        <div class="wraper">
+          <div class="box detail_box-1"></div>
+          <div class="box detail_box-2"></div>
+          <div class="box detail_box-3"></div>
+          <div class="box detail_box-4"></div>
+          <div class="box detail_box-5"></div>
+          <div class="box detail_box-6"></div>
+        </div>
+      </div>
+    </div>
+  This is css file
+  
+
+.container {
+  width: 477px;
+  height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80");
+  /* / overflow: hidden; */
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content:flex-end;
+  position: relative;
+}
+.main {
+  width: 90%;
+  height: 40%;
+  background: #000;
+  position: absolute;
+  top: 10%;
+  background: linear-gradient(
+    182.94deg,
+    rgba(176, 183, 174, 0.5) 24.99%,
+    rgba(0, 0, 0, 0) 100.71%
+  );
+  border-radius: 9px;
+}
+.detail {
+  width: 90%;
+  height: 40%;
+  background: rgb(223, 8, 8);
+  position: absolute;
+  bottom: 10%;
+  background: linear-gradient(
+    1.6deg,
+    rgba(176, 183, 174, 0.5) -13.48%,
+    rgba(0, 0, 0, 0) 171.88%
+  );
+  border-radius: 9px 9px 0px 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+
+  /* or 29px */
+
+  letter-spacing: 0.01em;
+
+  color: rgba(255, 255, 255, 0.81);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+.txt {
+  /* background: #000; */
+  width: 100%;
+  margin-left: 25px;
+  /* padding: 10px; */
+}
+.wraper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  place-items: center;
+  align-items: center;
+  padding: 20px;
+  /* background: #000; */
+}
+.box {
+  width: 100px;
+  height: 100px;
+
+  /* background: rgba(172, 144, 60, 0.18); */
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+  
+  -->
+
+    <!-- This is version__2 -->
+
+    <div class="container">
+      <div class="header">
+        <h3>WEATHER</h3>
+      </div>
+      <div class="wrapper">
+        <!-- <div class="main">
+          <h4 class="current_city">${data.name}</h4>
+          <p class="current_status">${data.weather[0].description}</p>
+          <img
+            class="img__png"
+            src="${data.weather[0].icon}.png"
+            alt="Cloudy"
+          />
+          <h1 class="current__tempreture">${300 - data.main.temp}° C</h1>
+          <p class="current__date">Sunday,07:00 am</p>
+        </div>
+        <div class="detail">
+          <p>Sunrise<br />07:10 am</p>
+          <p>Feels Like<br />${300 - data.main.feels_like}°</p>
+          <p>Humidity<br />${data.main.humidity}%</p>
+          <p>Sunset<br />06:15 pm</p>
+          <p>Dew Point<br />${300 - data.main.temp_min}°</p>
+          <p>Wind<br />${data.wind.speed}km/h</p>
+        </div> -->
+      </div>
+      <div class="footer">
+        <p>&copy; Copyright by Prabin Shrestha.</p>
+      </div>
+    </div>
+
+    <!--
+       <div class="main">
+        <h4 class="current_city">New York</h4>
+        <p class="current_status">Partly Cloudy</p>
+        <img
+          class="img__png"
+          src="https://www.clipartmax.com/png/middle/129-1293850_download-icon-mostly-cloudy-weather-icon.png"
+          alt="Cloudy"
+        />
+        <h1 class="current__tempreture">25° C</h1>
+        <p class="current__date">Sunday,07:00 am</p>
+      </div>
+      <div class="detail">
+        <p>Sunrise<br />07:10 am</p>
+        <p>Feels Like<br />25°</p>
+        <p>Humidity<br />53%</p>
+        <p>Sunset<br />06:15 pm</p>
+        <p>Dew Point<br />10°</p>
+        <p>Wind<br />10km/h</p>
+      </div>
+    -->
+  </body>
+</html>
